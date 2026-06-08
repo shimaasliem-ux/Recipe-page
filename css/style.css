@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 54%, 90%) ;
+    min-height: 100vh ;
+    padding: 5rem 1rem ;
+    font-family:'Outfit', sans-serif ;
+    color: hsl(30, 10%, 34%);
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding:2.5rem ;
+    max-width:730px ;
+}
+.photo img{
+    border-radius: 12px ;
+    width:100% ;
+    display: block;
+}
+h1{
+    margin-top: 2rem ;
+    margin-bottom: 1rem ;
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+.card > p{
+    margin-bottom:2rem;
+    line-height:1.6 ;
+}
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem ;
+    border-radius: 12px;
+    margin-bottom:1rem;
+}
+.preparation p{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.ingredients-list{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 2rem;
+}
+.instructions-list{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 2rem;
+}
+.preparation ul{
+    padding-left: 1.5rem;
+}
+.preparation li{
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+}
+.preparation span{
+    font-weight: 700 ;
+}
+h2{
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    font-family:  'Young Serif', serif;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+ul,ol{
+    margin-bottom: 2rem;
+}
+li{
+    line-height: 1.6 ;
+}
+li::marker{
+    color: hsl(14, 45%, 36%);
+}
+ul{
+    padding-left: 1.5rem;
+}
+ul li{
+    padding-left: 1rem ;
+    margin-bottom: 0.75rem;
+}
+ol{
+    padding-left: 1.5rem;
+}
+ol li{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+ol li strong{
+    color: hsl(24, 5%, 18%);
+}
+table{
+    width: 100% ;
+    border-collapse: collapse;
+}
+td{
+    padding: 1rem 2rem ;
+}
+tr{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+td:last-child{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+tr:last-child{
+    border-bottom: none ;
+}
+
+
+@media (max-width: 768px){
+    body{
+        padding: 0;
+    }
+
+    .card{
+        border-radius: 0;
+        padding: 2rem;
+    }
+
+    .photo img{
+        border-radius: 0;
+    }
+}
